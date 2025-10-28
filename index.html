@@ -1,0 +1,87 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cargo Matters — Frontend Demo by Wasim</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/logo.svg" alt="Logo" class="logo" />
+        <h1 class="sr-only">Cargo Matters</h1>
+      </div>
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <h2 class="title">Reliable logistics, made simple.</h2>
+        <p class="subtitle">Demo assignment showing animations, slider, tooltips and responsive layout.</p>
+        <a class="cta" href="#services">Explore Services</a>
+      </div>
+    </section>
+
+    <section id="services" class="services container">
+      <h3>Our Services</h3>
+      <div class="slider-wrap">
+        <button class="slide-btn prev" aria-label="Previous">‹</button>
+        <div class="slider" id="image-slider" tabindex="0">
+          <div class="slide"><img src="assets/cargo1.svg" alt="Cargo Matters"></div>
+          <div class="slide"><img src="assets/cargo2.svg" alt="Fast Freight"></div>
+          <div class="slide"><img src="assets/cargo3.svg" alt="Secure Export"></div>
+          <div class="slide"><img src="assets/cargo4.svg" alt="Door to Door"></div>
+        </div>
+        <button class="slide-btn next" aria-label="Next">›</button>
+      </div>
+
+      <div class="cards">
+        <article class="card" data-tooltip="We handle cross-border documentation and customs clearance.">
+          <h4>Export Documentation</h4>
+          <p>Assistance with paperwork and compliance.</p>
+        </article>
+
+        <article class="card" data-tooltip="Safe packaging and fragile item handling services available.">
+          <h4>Packing & Handling</h4>
+          <p>Professional packing tailored to your goods.</p>
+        </article>
+
+        <article class="card" data-tooltip="Track your consignment with real-time tracking updates.">
+          <h4>Real-time Tracking</h4>
+          <p>Know where your shipment is — always.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about container">
+      <h3>About Cargo Matters</h3>
+      <p>We are a fictional demo company for this frontend assignment. The page includes a slider (image scroller), color-changing animations, and hover popups — all implemented using HTML, CSS and vanilla JavaScript.</p>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h3>Contact</h3>
+      <p>Frontend demo by <strong>Wasim Akram</strong>. Replace content and images before submission if you want to personalize it.</p>
+      <p>Email: <em>akramwasim19243@gmail.com</em></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© Cargo Matters — Frontend Demo. Built by Wasim.</small>
+    </div>
+  </footer>
+
+  <div id="tooltip" class="tooltip" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
